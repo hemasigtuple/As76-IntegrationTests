@@ -1,0 +1,40 @@
+2025-03-21 18:32:27,291 - INFO - device-orchestrator-job-integration-testing - 🔹 STARTING TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_eject_tray_command
+2025-03-21 18:32:27,373 - INFO - device-orchestrator-job-integration-testing - Connected to nats://192.168.0.135:4222
+2025-03-21 18:32:27,378 - INFO - device-orchestrator-job-integration-testing - Subscribed to nila.garuda.scanner.command...
+2025-03-21 18:32:27,385 - INFO - device-orchestrator-job-integration-testing - Subscribed to nila.console.commands...
+2025-03-21 18:32:27,391 - INFO - device-orchestrator-job-integration-testing - Subscribed to nila.dicom_bridge.commands...
+2025-03-21 18:32:27,398 - INFO - device-orchestrator-job-integration-testing - Subscribed to nila.garuda.analyser.command...
+2025-03-21 18:32:27,408 - INFO - device-orchestrator-job-integration-testing - Subscribed to nila.garuda.recon.command...
+2025-03-21 18:32:27,414 - INFO - device-orchestrator-job-integration-testing - Subscribed to nila.dicom-converter.commands...
+2025-03-21 18:32:27,420 - INFO - device-orchestrator-job-integration-testing - Subscribed to nila.cloud_bridge.commands...
+2025-03-21 18:32:27,420 - INFO - device-orchestrator-job-integration-testing - Publishing start_pbs_job command...
+2025-03-21 18:32:27,421 - INFO - device-orchestrator-job-integration-testing - Published start_pbs_job command...{'id': '702891f1-3bfb-4b21-8054-fe2b9914faac', 'type': 'start_pbs_job', 'version': 1, 'data': {'tray_type': 'all_pbs', 'scanned_by': '', 'workflow_mode': 'manual', 'timezone': ''}, 'metadata': {'correlation_id': None, 'timestamp': '2025-03-21 13:02:27.421003', 'trace_id': '7e4d3088-de0a-4969-b3e6-66ba6e08b519'}}
+2025-03-21 18:32:27,428 - INFO - device-orchestrator-job-integration-testing - Received a message on nila.garuda.scanner.command: {"id": "1fe9262c-901f-4de2-b724-7f1d545b4391", "type": "eject_tray", "version": 1, "data": {"tray_type": "all_pbs", "scanned_by": "", "workflow_mode": "manual", "timezone": ""}, "metadata": {"correlation_id": "702891f1-3bfb-4b21-8054-fe2b9914faac", "timestamp": "2025-03-21T13:02:27.446367+00:00", "trace_id": "7e4d3088-de0a-4969-b3e6-66ba6e08b519"}}
+2025-03-21 18:32:27,430 - INFO - device-orchestrator-job-integration-testing - Received a message on nila.console.commands: {"id": "3f9563d7-20eb-4480-b155-a591ea9c3844", "type": "show_tray_ejecting_dialog", "version": 1, "data": {"tray_type": "all_pbs", "scanned_by": "", "workflow_mode": "manual", "timezone": ""}, "metadata": {"correlation_id": "702891f1-3bfb-4b21-8054-fe2b9914faac", "timestamp": "2025-03-21T13:02:27.447547+00:00", "trace_id": "7e4d3088-de0a-4969-b3e6-66ba6e08b519"}, "tray_type": "all_pbs", "reanalysis_state": false, "is_scan_running": "in_progress", "scanned_by": "", "is_slide_under_scan": false}
+2025-03-21 18:32:27,523 - INFO - tests.test-device-orchestrator-job-workflow.test_eject_tray_command - ✅ PASSED: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_eject_tray_command
+
+2025-03-21 18:32:27,524 - INFO - tests.test-device-orchestrator-job-workflow.test_eject_tray_command - 🔸 FINISHED TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_eject_tray_command
+
+2025-03-21 18:32:27,525 - INFO - tests.test-device-orchestrator-job-workflow.test_eject_tray_command - ============================================================================================
+
+2025-03-21 18:32:27,526 - INFO - tests.test-device-orchestrator-job-workflow.test_eject_tray_command - 🔹 STARTING TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_show_tray_ejecting_dialog_command
+2025-03-21 18:32:27,528 - INFO - tests.test-device-orchestrator-job-workflow.test_show_tray_ejecting_dialog_command - ✅ PASSED: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_show_tray_ejecting_dialog_command
+
+2025-03-21 18:32:27,528 - INFO - tests.test-device-orchestrator-job-workflow.test_show_tray_ejecting_dialog_command - 🔸 FINISHED TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_show_tray_ejecting_dialog_command
+
+2025-03-21 18:32:27,529 - INFO - tests.test-device-orchestrator-job-workflow.test_show_tray_ejecting_dialog_command - ============================================================================================
+
+2025-03-21 18:32:27,529 - INFO - tests.test-device-orchestrator-job-workflow.test_show_tray_ejecting_dialog_command - 🔹 STARTING TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_tray_ejected_scanner_event
+2025-03-21 18:32:27,530 - INFO - tests.test-device-orchestrator-job-workflow.test_tray_ejected_scanner_event - 🔸 FINISHED TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_tray_ejected_scanner_event
+
+2025-03-21 18:32:27,530 - INFO - tests.test-device-orchestrator-job-workflow.test_tray_ejected_scanner_event - ============================================================================================
+
+2025-03-21 18:32:27,530 - INFO - tests.test-device-orchestrator-job-workflow.test_tray_ejected_scanner_event - 🔹 STARTING TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_show_place_tray_dialog_command
+2025-03-21 18:32:29,991 - INFO - device-orchestrator-job-integration-testing - Received a message on nila.console.commands: {"id": "e968a86b-8147-4c10-b421-2b7a0a5867cd", "originator": "Garuda_Scanner", "version": 1, "metadata": {"correlation_id": "240df7cf-1533-429b-87c1-2c5aa04c9de7", "timestamp": "2025-03-21T13:02:29.990523+00:00", "trace_id": "7e4d3088-de0a-4969-b3e6-66ba6e08b519"}, "data": {}, "type": "show_place_tray_dialog"}
+2025-03-21 18:32:29,991 - INFO - tests.test-device-orchestrator-job-workflow.test_show_place_tray_dialog_command - ✅ PASSED: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_show_place_tray_dialog_command
+
+2025-03-21 18:32:29,991 - INFO - tests.test-device-orchestrator-job-workflow.test_show_place_tray_dialog_command - 🔸 FINISHED TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_show_place_tray_dialog_command
+
+2025-03-21 18:32:29,991 - INFO - tests.test-device-orchestrator-job-workflow.test_show_place_tray_dialog_command - ============================================================================================
+
+2025-03-21 18:32:29,992 - INFO - tests.test-device-orchestrator-job-workflow.test_show_place_tray_dialog_command - 🔹 STARTING TEST: tests/test-device-orchestrator-job-workflow.py::TestPbsJobWorkflow::test_show_macro_scan_progress_screen_command_issued

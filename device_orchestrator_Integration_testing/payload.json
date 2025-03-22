@@ -1,0 +1,11 @@
+{
+    "id": "eaaa6bef-4de1-4281-9fca-53d6ff212f60",
+    "type": "start_pbs_job",
+    "version": 1,
+    "data": { "tray_type": "all_pbs", "scanned_by": "" },
+    "metadata": {
+        "correlation_id": "",
+        "timestamp": "2024-12-03T06:24:17.830461Z",
+        "trace_id": "3ffe9791-c148-4f97-81f5-81ee2095210f"
+    }
+}
