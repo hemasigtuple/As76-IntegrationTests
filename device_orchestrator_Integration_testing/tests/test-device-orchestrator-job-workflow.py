@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import pytest
 from dotenv import load_dotenv
 from tests.conftest import logger
+from collections import defaultdict
 
 # Load environment variables from .env file
 load_dotenv()
@@ -620,8 +621,6 @@ class TestPbsJobWorkflow(TestBase):
         test_instance = setup_pbs_job
         count = 0
         last_message_data =None
-
-        from collections import defaultdict
 
         messages_test = defaultdict(int)
 
